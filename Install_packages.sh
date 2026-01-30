@@ -6,7 +6,7 @@
 # Description : This script will install the packages passed as arguments
 # -------------------------------------------------
 
-USER_ID = $(id -u)
+USER_ID=$(id -u)
 LOGS_FOLDER="/var/log/learn-shell"
 LOGS_FILE="$LOGS_FOLDER/$0.log"
 
