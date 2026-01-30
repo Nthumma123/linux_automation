@@ -24,7 +24,7 @@ mkdir -p $LOGS_FOLDER
 
 # Function to check the status of the previous command
 validate() {
-    if [$1 -ne 0 ] ; then
+    if [ $1 -ne 0 ] ; then
         echo -e "$R FAILURE $N" | tee -a $LOGS_FILE
         echo "Refer the log file $LOGS_FILE for more information" 
         exit 1
